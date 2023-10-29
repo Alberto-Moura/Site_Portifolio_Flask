@@ -7,5 +7,6 @@ def index():
     return render_template('index.html')
 
 
+# Inicialização do programa
 if __name__ == '__main__':
     app.run(debug=True)
