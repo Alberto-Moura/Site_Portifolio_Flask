@@ -289,3 +289,7 @@ i.menu-mobile {
         margin-right: 0;
     } 
 }
+
+.card {
+    background: aliceblue;
+}
