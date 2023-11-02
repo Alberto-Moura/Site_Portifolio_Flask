@@ -204,6 +204,7 @@ i.menu-mobile {
     }
 }
 
+/* Estilizando section (fundo)*/
 .section-bg {
     background-color: #e1e2eb;
 }
@@ -260,4 +261,31 @@ i.menu-mobile {
     background: aliceblue;
     border-radius: 50%;
     left: -9px;
+}
+
+/* Estilizando Carrocel - Previa */
+.carousel-control-prev {
+    margin-left: -7rem;
+}
+
+/* Estilizando Carrocel - Next */
+.carousel-control-next {
+    margin-right: -7rem;
+}
+
+/* Estilizando Carrocel - Superior */
+.carousel-indicators {
+    margin-bottom: -35px;
+}
+
+@media (max-width: 1860px){
+   /* Estilizando Carrocel - Previa */
+    .carousel-control-prev {
+        margin-left: 0;
+    }
+
+    /* Estilizando Carrocel - Next */
+    .carousel-control-next {
+        margin-right: 0;
+    } 
 }
