@@ -214,6 +214,11 @@ i.menu-mobile {
     background-color: aliceblue;
 }
 
+/* Cor da barra preechida */
+.progress-bar {
+    color: aliceblue;
+    background-color: #212431;
+}
 
 /* Estilizando os títulos da seção do Currículo*/
 .cv .cv-title {
@@ -278,6 +283,36 @@ i.menu-mobile {
     margin-bottom: -35px;
 }
 
+/* ==== Animação ==== */
+
+/* Animação - SOBRE */
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="down"] {
+    transform: translate3d(0, -100%, 0);
+}
+
+[data-anime="up"] {
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* Retirando a Estilização do carrocel em telas grandes e médias */
 @media (max-width: 1860px){
    /* Estilizando Carrocel - Previa */
     .carousel-control-prev {
@@ -288,8 +323,13 @@ i.menu-mobile {
     .carousel-control-next {
         margin-right: 0;
     } 
+
+    [data-anime="right"] {
+        transform: translate3d(-100%, 0, 0);
+    }
 }
 
+/* Fundo dos contatos */
 .card {
     background: aliceblue;
 }
