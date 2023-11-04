@@ -1,4 +1,4 @@
-/* Abre e fecha menu laretal em modo mobile */
+// Abre e fecha menu laretal em modo mobile
 
 const menuMobile = document.querySelector(".menu-mobile")
 const body = document.querySelector("body")
@@ -10,7 +10,7 @@ menuMobile.addEventListener("click", () => {
     body.classList.toggle("menu-nav-active");
 });
 
-/* Fecha o meni quando clicar em algum item e muda o icone para list */
+// Fecha o meni quando clicar em algum item e muda o icone para list
 const navItem = document.querySelectorAll('.nav-item')
 
 navItem.forEach(item => {
@@ -22,7 +22,7 @@ navItem.forEach(item => {
     })
 })
 
-/* Animar todos os intes na tela que tiverem o atributo data-anime*/
+// Animar todos os intes na tela que tiverem o atributo data-anime
 const item = document.querySelectorAll("[data-anime]");
 
 const animeScroll = () => {
@@ -42,3 +42,17 @@ animeScroll();
 window.addEventListener("scroll", ()=>{
     animeScroll();
 })
+
+// Ativar Carregamento no botão de enviar formulário para Loading ...
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
+
+btnEnviar.addEventListener("click", ()=> {
+    btnEnviarLoader.style.display = "block";
+    btnEnviar.style.display = "None"
+})
+
+// Tirar a mensagem depois de 5 segundos
+setTimeout(()=> {
+    document.querySelector('#alerta').style.display = "None";
+}, 5000)
