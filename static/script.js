@@ -1,5 +1,4 @@
 // Abre e fecha menu laretal em modo mobile
-
 const menuMobile = document.querySelector(".menu-mobile")
 const body = document.querySelector("body")
 
@@ -10,7 +9,7 @@ menuMobile.addEventListener("click", () => {
     body.classList.toggle("menu-nav-active");
 });
 
-// Fecha o meni quando clicar em algum item e muda o icone para list
+// Fecha o menu quando clicar em algum item e muda o icone para list
 const navItem = document.querySelectorAll('.nav-item')
 
 navItem.forEach(item => {

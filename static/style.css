@@ -44,7 +44,8 @@ html, body {
     top: 0;
     left: 0;
     bottom: 0;
-    background: #021124;
+     background-image: linear-gradient(#2D3047, #021124);
+    /*background: #2D3047;*/
     overflow-y: auto;
     width: 300px;
     transition: all ease-in-out 0.5s;
@@ -57,7 +58,7 @@ html, body {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 4px solid #2c2f3f;
+    border: 4px solid #242633;
     border-radius: 50%;
 }
 
@@ -74,18 +75,18 @@ html, body {
 /* Estilização dos Links para redes sociais */
 #header .profile .social-links a{
     font-size: 1rem;
-    background: #212431;
+    background: #2D304700;
     color: aliceblue;
-    padding: 0.6rem;
+    padding: 0.8rem;
     margin-right: 1rem;
-    border-radius: 50%;
+    border-radius: 10%;
     transition: 0.3s;
     text-decoration: none;
 }
 
 /* Estilização dos Links para redes sociais - Hover*/
 #header .profile .social-links a:hover {
-    background: #149ddd;
+    background: #007991;
 }
 
 /* Estilização barra de menu, icones e links*/
@@ -107,7 +108,7 @@ html, body {
 .nav-menu a:focus {
     font-size: 24px;
     padding-right: 0.8rem;
-    color: #6f7180;
+    color: #7b7d8f;
 }
 
 .nav-menu a:hover,
@@ -122,7 +123,7 @@ html, body {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i {
-    color: #149ddd;
+    color: #007991;
 }
 
 #main {
@@ -165,7 +166,7 @@ section#inicio div#arraste a {
 i.menu-mobile {
     position: fixed;
     color: aliceblue;
-    background-color: #252c90;
+    background-color: #2D3047;
     right: 1rem;
     top: 1rem;
     font-size: 1.5rem;
@@ -208,7 +209,7 @@ i.menu-mobile {
 
 /* Estilizando section (fundo)*/
 .section-bg {
-    background-color: #e1e2eb;
+    background-color: #B9B7A775;
 }
 
 /* Cor de Fundo da Barra de progresso */
@@ -219,7 +220,7 @@ i.menu-mobile {
 /* Cor da barra preechida */
 .progress-bar {
     color: aliceblue;
-    background-color: #212431;
+    background-color: #990033;
 }
 
 /* Estilizando os títulos da seção do Currículo*/
@@ -227,14 +228,14 @@ i.menu-mobile {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #050d18;
+    color: #2D3047;
 }
 
 /* Estilizando os itens do Currículo*/
 .cv .cv-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #1f5297;
+    border-left: 2px solid #990033;
     position: relative;
 }
 
@@ -264,7 +265,7 @@ i.menu-mobile {
     top: 0;
     width: 16px;
     height: 16px;
-    border: 2px solid #1f5297;
+    border: 2px solid #990033;
     background: aliceblue;
     border-radius: 50%;
     left: -9px;
