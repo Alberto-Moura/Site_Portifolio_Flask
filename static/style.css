@@ -26,11 +26,12 @@ html, body {
     background-color: aliceblue;
 }
 
-/* Estilização de Ênfase */
-em {
-    font-size: 20px;
-    color: red;
+#foto_apresentacao {
+    width: 80%;
+    height: auto;
+    border-radius: 5%;
 }
+
 
 /* Estilizando a Lista de Informações e Habilidades*/
 #list {
@@ -92,6 +93,7 @@ em {
     padding: 1.5rem;
 }
 
+/* Estilizando os links do menu - Em foco */
 .nav-menu a, 
 .nav-menu a:focus {
     display: flex;
@@ -361,6 +363,7 @@ i.menu-mobile {
     transition: .3s;
 }
 
+/* Footer ajustado para mobile */
 @media (max-width: 1012px) {
     #footer {
         position: static;
